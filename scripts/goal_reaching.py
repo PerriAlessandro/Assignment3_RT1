@@ -1,4 +1,22 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
+
+"""
+.. module::goal_reaching
+	:platform: Unix
+  	:synopsis: Python module for the autonomous driving
+.. moduleauthor:: Alessandro Perri s4476726@studenti.unige.it
+
+Subscribes to:
+	/mode to retrieve the current modality
+
+Publishes to:
+	/timeout 
+	/mode to change the modality if the user wants to quit
+
+This node implements the first modality i.e. the autonomous navigation towards a certain position
+"""
+
+
 
 import rospy
 import time
@@ -9,8 +27,11 @@ from tf import transformations
 from std_srvs.srv import *
 from std_msgs.msg import Int32, Bool
 
-#class for the characters colors
+
 class colors:
+	"""
+	Class used for printing colors on the terminal
+	"""
 	PINK = '\033[95m'
 	BLUE = '\033[94m'
 	CYAN = '\033[96m'
@@ -33,10 +54,22 @@ done_cb=False #variable which states the accomplishment of the goal
 goal_set=False #variable which states if the goal has already been set
 isTimeout=False
 
-def callback_active(): #function which is called when the action starts
-    rospy.loginfo("\nAction server is processing the goal...")
+def callback_active(): 
+	"""
+	Callback function which is called when the action starts
 
-def callback_done(state, result): #function which is called when the action is over
+	"""
+	rospy.loginfo("\nAction server is processing the goal...")
+
+def callback_done(state, result):
+	"""
+	Callback function which is called when the action is over
+
+	Args:
+		state(actionlib_msgs/GoalStatus): status of the goal, the message is of type 'actionlib_msgs/GoalStatus.msg'
+		result(MoveBaseResult):result of the goal 
+
+	"""
 	global done_cb
 	global goal_set
 	if state == 3:
@@ -68,12 +101,21 @@ def callback_done(state, result): #function which is called when the action is o
 		print(colors.RED + colors.UNDERLINE + colors.BOLD +"LOST"+ colors.ENDC)
 		return
 
-def callback_feedback(feedback): #function which is called during the execution of the action
-	#return
+def callback_feedback(feedback):
+	"""
+	Callback function which is called during the execution of the action
+
+	Args:
+		feedback(move_base_msgs/MoveBaseActionFeedback.msg): contains infos about the Pose with reference coordinate and timestamp
+
+	"""
 	rospy.loginfo("Feedback:%s" % str(feedback))
 
-def set_action(): #set-up of the action on the client-side
+def set_action(): 
+	"""
+	Set-up of the action on the client-side
 
+	"""
 	global client 
 	global goal 
 	
@@ -85,7 +127,15 @@ def set_action(): #set-up of the action on the client-side
 	goal.target_pose.header.stamp = rospy.Time.now()
 	goal.target_pose.pose.orientation.w = 1.0
 
-def set_goal(goal_x_coord,goal_y_coord): #function to set the goal
+def set_goal(goal_x_coord,goal_y_coord): 
+	"""
+	Function to set the goal
+
+	Args:
+		goal_x_coord(double): 'x' coordinate of the goal that has to be achieved
+		goal_y_coord(double): 'y' coordinate of the goal that has to be achieved
+
+	"""
 	global goal_set
 	global goal
 	os.system('cls||clear') #clear the console
@@ -96,7 +146,13 @@ def set_goal(goal_x_coord,goal_y_coord): #function to set the goal
 		)
 	client.send_goal(goal,callback_done,callback_active,callback_feedback) #sending the goal
 
-def my_clbk_timeout(event): #function to cancel the goal if its time has expired
+def my_clbk_timeout(event): 
+	"""
+	Function to cancel the goal if its time has expired
+
+	Args:
+		event(TimerObject): object which includes many infos such as the moment when the callback is called and the duration
+	"""
 	global isTimeout
 	if currentmode==1:
 		print (colors.RED + colors.UNDERLINE + colors.BOLD +"Goal time expired")
@@ -104,13 +160,22 @@ def my_clbk_timeout(event): #function to cancel the goal if its time has expired
 		
 	
 def mode_callback(data):
-    global currentmode
-    #rospy.loginfo("I heard %d",data.data)
-    currentmode=data.data
+	"""
+	Callback function to set the local variable of the current mode if it has been changed by a node
+
+	Args:
+		data(int): integer representing the current modality
+	"""
+	global currentmode
+	#rospy.loginfo("I heard %d",data.data)
+	currentmode=data.data
     
 
 
 def main():
+	"""
+	Main function: if this modality is choosen by the user, it asks the user to insert a given position and therefore sets the action and the goal.
+	"""
 
 	global done_cb
 	global goal_set

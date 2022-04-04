@@ -1,10 +1,31 @@
 #!/usr/bin/python3
+
+"""
+.. module:: user_interface
+	:platform: Unix
+  	:synopsis: Python module for the user Interface
+.. moduleauthor:: Alessandro Perri <s4476726@studenti.unige.it>
+
+Subscribes to:
+	/timeout to check if the timeout for the autonomous driving mode has expired
+
+Publishes to:
+	/mode to start a new modality
+
+This node implements a simple user interface to let the user decide the modality that has to be runned.
+
+
+"""
+
 import rospy
 import os
 from std_msgs.msg import Int32, Bool
 isTimeout=False #variable that'll be set to true if the timeout expires
 
 class colors:
+	"""
+	Class used for printing colors on the terminal
+	"""
 	PINK = '\033[95m'
 	BLUE = '\033[94m'
 	CYAN = '\033[96m'
@@ -18,12 +39,25 @@ class colors:
 	BOLD = '\033[1m'
 	UNDERLINE = '\033[4m'
 
-def timeout_callback(data): #callback function for the timer
+def timeout_callback(data): 
+	"""
+	Callback function for the timer
+
+	Args:
+		data(bool): variable to notice if the timeout (for mode 1) has expired
+
+	"""
+	
 	global isTimeout
 	isTimeout=True
 	
 
 def main():
+	"""
+	Main Function: constantly asks for the user to press a certain key to start or change a modality. If the user presses a proper key, 
+
+	"""
+
 	global isTimeout
 	rospy.init_node('user_interface')
 	pubModality=rospy.Publisher('mode',Int32,queue_size=10) #publisher of 'mode' topic, sends user choice to other nodes
@@ -76,5 +110,6 @@ def main():
 			print(colors.RED + colors.UNDERLINE + colors.BOLD +"Wrong key"+colors.ENDC)
 
 
-main()
+if __name__ == '__main__':
+	main()
 

@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgoal__reaching_1_1colors" kind="class" language="Python" prot="public">
+    <compoundname>goal_reaching::colors</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classgoal__reaching_1_1colors_1aaeb585e033fbf8d9e41ab92af493b9d5" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string goal_reaching.colors::PINK</definition>
+        <argsstring></argsstring>
+        <name>PINK</name>
+        <initializer>=  &apos;\033[95m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/goal_reaching.py" line="35" column="1" bodyfile="scripts/goal_reaching.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgoal__reaching_1_1colors_1ae271bd6483eaab1d971f0bff3a85dc54" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string goal_reaching.colors::BLUE</definition>
+        <argsstring></argsstring>
+        <name>BLUE</name>
+        <initializer>=  &apos;\033[94m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/goal_reaching.py" line="36" column="1" bodyfile="scripts/goal_reaching.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgoal__reaching_1_1colors_1ae612e9ce6a79a35b2db45e6f6d618ddf" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string goal_reaching.colors::CYAN</definition>
+        <argsstring></argsstring>
+        <name>CYAN</name>
+        <initializer>=  &apos;\033[96m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/goal_reaching.py" line="37" column="1" bodyfile="scripts/goal_reaching.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgoal__reaching_1_1colors_1a41376f994c8e0429b330f4f1a7363754" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string goal_reaching.colors::GREEN</definition>
+        <argsstring></argsstring>
+        <name>GREEN</name>
+        <initializer>=  &apos;\033[92m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/goal_reaching.py" line="38" column="1" bodyfile="scripts/goal_reaching.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgoal__reaching_1_1colors_1a26e4867871be4e80f334ea209c23b534" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string goal_reaching.colors::YELLOW</definition>
+        <argsstring></argsstring>
+        <name>YELLOW</name>
+        <initializer>=  &apos;\033[93m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/goal_reaching.py" line="39" column="1" bodyfile="scripts/goal_reaching.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgoal__reaching_1_1colors_1a611d83e8af36305f2218f3106646c0d4" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string goal_reaching.colors::RED</definition>
+        <argsstring></argsstring>
+        <name>RED</name>
+        <initializer>=  &apos;\033[91m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/goal_reaching.py" line="40" column="1" bodyfile="scripts/goal_reaching.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgoal__reaching_1_1colors_1a82e9fa88df9f8364c912636b503d630d" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string goal_reaching.colors::ORANGE</definition>
+        <argsstring></argsstring>
+        <name>ORANGE</name>
+        <initializer>=  &apos;\033[33m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/goal_reaching.py" line="41" column="1" bodyfile="scripts/goal_reaching.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgoal__reaching_1_1colors_1a8a524bf4ec875e2f1eb5b65b34a1cdb4" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string goal_reaching.colors::PURPLE</definition>
+        <argsstring></argsstring>
+        <name>PURPLE</name>
+        <initializer>=  &apos;\033[35m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/goal_reaching.py" line="42" column="1" bodyfile="scripts/goal_reaching.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgoal__reaching_1_1colors_1a1640110697a9bbc29d03e851138bc8ec" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string goal_reaching.colors::ENDC</definition>
+        <argsstring></argsstring>
+        <name>ENDC</name>
+        <initializer>=  &apos;\033[0m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/goal_reaching.py" line="43" column="1" bodyfile="scripts/goal_reaching.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgoal__reaching_1_1colors_1a195fcacbfa9ef242a9c6f704bc7a5d4b" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string goal_reaching.colors::BOLD</definition>
+        <argsstring></argsstring>
+        <name>BOLD</name>
+        <initializer>=  &apos;\033[1m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/goal_reaching.py" line="44" column="1" bodyfile="scripts/goal_reaching.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgoal__reaching_1_1colors_1ac42537cd5cbd6541ef69f956d482b864" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string goal_reaching.colors::UNDERLINE</definition>
+        <argsstring></argsstring>
+        <name>UNDERLINE</name>
+        <initializer>=  &apos;\033[4m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/goal_reaching.py" line="45" column="1" bodyfile="scripts/goal_reaching.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class used for printing colors on the terminal
+</verbatim> </para>
+    </detaileddescription>
+    <location file="scripts/goal_reaching.py" line="31" column="1" bodyfile="scripts/goal_reaching.py" bodystart="31" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classgoal__reaching_1_1colors_1ae271bd6483eaab1d971f0bff3a85dc54" prot="public" virt="non-virtual"><scope>goal_reaching::colors</scope><name>BLUE</name></member>
+      <member refid="classgoal__reaching_1_1colors_1a195fcacbfa9ef242a9c6f704bc7a5d4b" prot="public" virt="non-virtual"><scope>goal_reaching::colors</scope><name>BOLD</name></member>
+      <member refid="classgoal__reaching_1_1colors_1ae612e9ce6a79a35b2db45e6f6d618ddf" prot="public" virt="non-virtual"><scope>goal_reaching::colors</scope><name>CYAN</name></member>
+      <member refid="classgoal__reaching_1_1colors_1a1640110697a9bbc29d03e851138bc8ec" prot="public" virt="non-virtual"><scope>goal_reaching::colors</scope><name>ENDC</name></member>
+      <member refid="classgoal__reaching_1_1colors_1a41376f994c8e0429b330f4f1a7363754" prot="public" virt="non-virtual"><scope>goal_reaching::colors</scope><name>GREEN</name></member>
+      <member refid="classgoal__reaching_1_1colors_1a82e9fa88df9f8364c912636b503d630d" prot="public" virt="non-virtual"><scope>goal_reaching::colors</scope><name>ORANGE</name></member>
+      <member refid="classgoal__reaching_1_1colors_1aaeb585e033fbf8d9e41ab92af493b9d5" prot="public" virt="non-virtual"><scope>goal_reaching::colors</scope><name>PINK</name></member>
+      <member refid="classgoal__reaching_1_1colors_1a8a524bf4ec875e2f1eb5b65b34a1cdb4" prot="public" virt="non-virtual"><scope>goal_reaching::colors</scope><name>PURPLE</name></member>
+      <member refid="classgoal__reaching_1_1colors_1a611d83e8af36305f2218f3106646c0d4" prot="public" virt="non-virtual"><scope>goal_reaching::colors</scope><name>RED</name></member>
+      <member refid="classgoal__reaching_1_1colors_1ac42537cd5cbd6541ef69f956d482b864" prot="public" virt="non-virtual"><scope>goal_reaching::colors</scope><name>UNDERLINE</name></member>
+      <member refid="classgoal__reaching_1_1colors_1a26e4867871be4e80f334ea209c23b534" prot="public" virt="non-virtual"><scope>goal_reaching::colors</scope><name>YELLOW</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

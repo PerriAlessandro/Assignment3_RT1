@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classteleop_1_1colors" kind="class" language="Python" prot="public">
+    <compoundname>teleop::colors</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classteleop_1_1colors_1a42744bd64c810ff0151f0409e731167f" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string teleop.colors::PINK</definition>
+        <argsstring></argsstring>
+        <name>PINK</name>
+        <initializer>=  &apos;\033[95m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="132" column="1" bodyfile="scripts/teleop.py" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classteleop_1_1colors_1a06caa2619065bdb9b50ff8ecd0509fd6" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string teleop.colors::BLUE</definition>
+        <argsstring></argsstring>
+        <name>BLUE</name>
+        <initializer>=  &apos;\033[94m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="133" column="1" bodyfile="scripts/teleop.py" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classteleop_1_1colors_1a610de342a0ea8eb0f98587c0ccbfe207" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string teleop.colors::CYAN</definition>
+        <argsstring></argsstring>
+        <name>CYAN</name>
+        <initializer>=  &apos;\033[96m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="134" column="1" bodyfile="scripts/teleop.py" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classteleop_1_1colors_1a452ed4925fbc9b906a5f1a57af1014d3" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string teleop.colors::GREEN</definition>
+        <argsstring></argsstring>
+        <name>GREEN</name>
+        <initializer>=  &apos;\033[92m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="135" column="1" bodyfile="scripts/teleop.py" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classteleop_1_1colors_1ab6d57d05df79bfce1dd88676e971327a" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string teleop.colors::YELLOW</definition>
+        <argsstring></argsstring>
+        <name>YELLOW</name>
+        <initializer>=  &apos;\033[93m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="136" column="1" bodyfile="scripts/teleop.py" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classteleop_1_1colors_1ac3ef0970eb02933e6d76220333a2f610" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string teleop.colors::RED</definition>
+        <argsstring></argsstring>
+        <name>RED</name>
+        <initializer>=  &apos;\033[91m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="137" column="1" bodyfile="scripts/teleop.py" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classteleop_1_1colors_1a712f7fdefb77c21b9a71b211fcd2cbc8" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string teleop.colors::ORANGE</definition>
+        <argsstring></argsstring>
+        <name>ORANGE</name>
+        <initializer>=  &apos;\033[33m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="138" column="1" bodyfile="scripts/teleop.py" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classteleop_1_1colors_1a6a797d4ceb17c7af9c633804f16727e0" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string teleop.colors::PURPLE</definition>
+        <argsstring></argsstring>
+        <name>PURPLE</name>
+        <initializer>=  &apos;\033[35m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="139" column="1" bodyfile="scripts/teleop.py" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classteleop_1_1colors_1a7909fb498a476e4b432df782b668df4e" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string teleop.colors::ENDC</definition>
+        <argsstring></argsstring>
+        <name>ENDC</name>
+        <initializer>=  &apos;\033[0m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="141" column="1" bodyfile="scripts/teleop.py" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classteleop_1_1colors_1a8f68acb780cec4cea6357f4096337c3d" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string teleop.colors::BOLD</definition>
+        <argsstring></argsstring>
+        <name>BOLD</name>
+        <initializer>=  &apos;\033[1m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="142" column="1" bodyfile="scripts/teleop.py" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classteleop_1_1colors_1a7612a4934665b895c830032d0edd0a60" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string teleop.colors::UNDERLINE</definition>
+        <argsstring></argsstring>
+        <name>UNDERLINE</name>
+        <initializer>=  &apos;\033[4m&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="143" column="1" bodyfile="scripts/teleop.py" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class used for printing colors on the terminal
+</verbatim> </para>
+    </detaileddescription>
+    <location file="scripts/teleop.py" line="128" column="1" bodyfile="scripts/teleop.py" bodystart="128" bodyend="147"/>
+    <listofallmembers>
+      <member refid="classteleop_1_1colors_1a06caa2619065bdb9b50ff8ecd0509fd6" prot="public" virt="non-virtual"><scope>teleop::colors</scope><name>BLUE</name></member>
+      <member refid="classteleop_1_1colors_1a8f68acb780cec4cea6357f4096337c3d" prot="public" virt="non-virtual"><scope>teleop::colors</scope><name>BOLD</name></member>
+      <member refid="classteleop_1_1colors_1a610de342a0ea8eb0f98587c0ccbfe207" prot="public" virt="non-virtual"><scope>teleop::colors</scope><name>CYAN</name></member>
+      <member refid="classteleop_1_1colors_1a7909fb498a476e4b432df782b668df4e" prot="public" virt="non-virtual"><scope>teleop::colors</scope><name>ENDC</name></member>
+      <member refid="classteleop_1_1colors_1a452ed4925fbc9b906a5f1a57af1014d3" prot="public" virt="non-virtual"><scope>teleop::colors</scope><name>GREEN</name></member>
+      <member refid="classteleop_1_1colors_1a712f7fdefb77c21b9a71b211fcd2cbc8" prot="public" virt="non-virtual"><scope>teleop::colors</scope><name>ORANGE</name></member>
+      <member refid="classteleop_1_1colors_1a42744bd64c810ff0151f0409e731167f" prot="public" virt="non-virtual"><scope>teleop::colors</scope><name>PINK</name></member>
+      <member refid="classteleop_1_1colors_1a6a797d4ceb17c7af9c633804f16727e0" prot="public" virt="non-virtual"><scope>teleop::colors</scope><name>PURPLE</name></member>
+      <member refid="classteleop_1_1colors_1ac3ef0970eb02933e6d76220333a2f610" prot="public" virt="non-virtual"><scope>teleop::colors</scope><name>RED</name></member>
+      <member refid="classteleop_1_1colors_1a7612a4934665b895c830032d0edd0a60" prot="public" virt="non-virtual"><scope>teleop::colors</scope><name>UNDERLINE</name></member>
+      <member refid="classteleop_1_1colors_1ab6d57d05df79bfce1dd88676e971327a" prot="public" virt="non-virtual"><scope>teleop::colors</scope><name>YELLOW</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

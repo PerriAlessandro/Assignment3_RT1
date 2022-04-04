@@ -1,0 +1,391 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespaceteleop" kind="namespace" language="Python">
+    <compoundname>teleop</compoundname>
+    <innerclass refid="classteleop_1_1colors" prot="public">teleop::colors</innerclass>
+    <innerclass refid="classteleop_1_1_publish_thread" prot="public">teleop::PublishThread</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceteleop_1a4fd0b9a89bd7323ded365d7ee943fad9" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string teleop.msg1</definition>
+        <argsstring></argsstring>
+        <name>msg1</name>
+        <initializer>=  &quot;&quot;&quot;
+- - -  NOT ASSISTED  - - -
+- - - MANUAL DRIVING - - -
+--------------------------
+Moving around:
+   u    i    o
+   j    k    l
+   m    ,    .
+
+For Holonomic mode (strafing), hold down the shift key:
+---------------------------
+   U    I    O
+   J    K    L
+   M    &lt;    &gt;
+
+t : up (+z)
+b : down (-z)
+
+anything else : stop
+
+q/z : increase/decrease max speeds by 10%
+w/x : increase/decrease only linear speed by 10%
+e/c : increase/decrease only angular speed by 10%
+
+PRESS &apos;p&apos; TO QUIT THE MODE AND RETURN IN &apos;IDLE&apos; STATUS
+
+&quot;&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="33" column="1" bodyfile="scripts/teleop.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceteleop_1a0c572c1d2dc76065135450001615e8ca" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary teleop.moveBindings_mode2</definition>
+        <argsstring></argsstring>
+        <name>moveBindings_mode2</name>
+        <initializer>=  {
+        &apos;i&apos;:(1,0,0,0),
+        &apos;o&apos;:(1,0,0,-1),
+        &apos;j&apos;:(0,0,0,1),
+        &apos;l&apos;:(0,0,0,-1),
+        &apos;u&apos;:(1,0,0,1),
+        &apos;,&apos;:(-1,0,0,0),
+        &apos;.&apos;:(-1,0,0,1),
+        &apos;m&apos;:(-1,0,0,-1),
+        &apos;O&apos;:(1,-1,0,0),
+        &apos;I&apos;:(1,0,0,0),
+        &apos;J&apos;:(0,1,0,0),
+        &apos;L&apos;:(0,-1,0,0),
+        &apos;U&apos;:(1,1,0,0),
+        &apos;&lt;&apos;:(-1,0,0,0),
+        &apos;&gt;&apos;:(-1,-1,0,0),
+        &apos;M&apos;:(-1,1,0,0),
+        &apos;t&apos;:(0,0,1,0),
+        &apos;b&apos;:(0,0,-1,0),
+        
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="61" column="1" bodyfile="scripts/teleop.py" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceteleop_1a5a7d93e4eb94a831fb34e3812e1767e9" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary teleop.speedBindings</definition>
+        <argsstring></argsstring>
+        <name>speedBindings</name>
+        <initializer>= {
+        &apos;q&apos;:(1.1,1.1),
+        &apos;z&apos;:(.9,.9),
+        &apos;w&apos;:(1.1,1),
+        &apos;x&apos;:(.9,1),
+        &apos;e&apos;:(1,1.1),
+        &apos;c&apos;:(1,.9),
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="83" column="1" bodyfile="scripts/teleop.py" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceteleop_1a1728c1bc5a4043f6c7df2c0ad2747a3e" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string teleop.msg2</definition>
+        <argsstring></argsstring>
+        <name>msg2</name>
+        <initializer>=  &quot;&quot;&quot;
+- - - -  ASSISTED  - - - -
+- - - MANUAL DRIVING - - -
+--------------------------
+Moving around:
+       i    
+   j   k    l
+
+q/z : increase/decrease max speeds by 10%
+w/x : increase/decrease only linear speed by 10%
+e/c : increase/decrease only angular speed by 10%
+
+PRESS &apos;p&apos; TO QUIT THE MODE AND RETURN IN &apos;IDLE&apos; STATUS
+
+&quot;&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="95" column="1" bodyfile="scripts/teleop.py" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceteleop_1a30f041931df3deb9fea047413dbe0c1b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool teleop.can_go_left</definition>
+        <argsstring></argsstring>
+        <name>can_go_left</name>
+        <initializer>=  True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="111" column="1" bodyfile="scripts/teleop.py" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceteleop_1a534d6b3c6630fd116ae5ebc2a702bdd7" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool teleop.can_go_right</definition>
+        <argsstring></argsstring>
+        <name>can_go_right</name>
+        <initializer>=  True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="112" column="1" bodyfile="scripts/teleop.py" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceteleop_1ac7f1f599fde5a35e81bb87af3980baa3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool teleop.can_go_straight</definition>
+        <argsstring></argsstring>
+        <name>can_go_straight</name>
+        <initializer>=  True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="113" column="1" bodyfile="scripts/teleop.py" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceteleop_1a53f75f6e72eba8a708a2223c42cd5218" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool teleop.firstTime</definition>
+        <argsstring></argsstring>
+        <name>firstTime</name>
+        <initializer>= False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="114" column="1" bodyfile="scripts/teleop.py" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceteleop_1a6cf6a928440e64c37c93b228be8cc177" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int teleop.currentmode</definition>
+        <argsstring></argsstring>
+        <name>currentmode</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="115" column="1" bodyfile="scripts/teleop.py" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceteleop_1a4e175c2e448305ac1f74f4b1d12418fe" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool teleop.quit</definition>
+        <argsstring></argsstring>
+        <name>quit</name>
+        <initializer>= False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="116" column="1" bodyfile="scripts/teleop.py" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceteleop_1a324730ec6ab1b9fb30cca7cf4e009b45" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary teleop.moveBindings_mode3</definition>
+        <argsstring></argsstring>
+        <name>moveBindings_mode3</name>
+        <initializer>=  {
+        &apos;i&apos;:(1,0,0,0),
+        &apos;j&apos;:(0,0,0,1),
+        &apos;l&apos;:(0,0,0,-1),
+        &apos;k&apos;:(-1,0,0,0),
+        &apos;p&apos;:(0,0,0,0),
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="118" column="1" bodyfile="scripts/teleop.py" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceteleop_1a65f55c21f1730466be45aa4287e6b79b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def teleop.getKey</definition>
+        <argsstring>(key_timeout)</argsstring>
+        <name>getKey</name>
+        <param>
+          <type>key_timeout</type>
+          <defname>key_timeout</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="238" column="1" bodyfile="scripts/teleop.py" bodystart="238" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteleop_1a0dd3d74894153fd003fe44250c7e13c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def teleop.vels</definition>
+        <argsstring>(speed, turn)</argsstring>
+        <name>vels</name>
+        <param>
+          <type>speed</type>
+          <defname>speed</defname>
+        </param>
+        <param>
+          <type>turn</type>
+          <defname>turn</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Function that prints out the current linear and angular speed
+
+Args:
+    speed(double): current speed
+    turn(double): current angular speed
+Returns:
+    (str):string whinch contains the linear and angular speed</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="249" column="1" bodyfile="scripts/teleop.py" bodystart="249" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteleop_1adeeb91caf01c29b8dd1b129d639ee33d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def teleop.clbk_laser</definition>
+        <argsstring>(msg)</argsstring>
+        <name>clbk_laser</name>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Callback function which is called to retrieve infos about the distances of the obstacles
+
+Args:
+    msg(sensor_msgs/LaserScan.msg): contains ranges[] array which provides the distances each laser and the objects in the environment</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="264" column="1" bodyfile="scripts/teleop.py" bodystart="264" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteleop_1a11e578954ded0164ad3e1422963641ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def teleop.routine</definition>
+        <argsstring>(dictionary, msg, assisted)</argsstring>
+        <name>routine</name>
+        <param>
+          <type>dictionary</type>
+          <defname>dictionary</defname>
+        </param>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <param>
+          <type>assisted</type>
+          <defname>assisted</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Function that binds the pressed key to the actual motion of the robot.
+
+Args:
+    dictionary(dict): a dictionary that contains all the selectable keys
+    msg(str): string containing the instructions for the selected modality</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="300" column="1" bodyfile="scripts/teleop.py" bodystart="300" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteleop_1a6fb8d5b4f992eb9862ff4db7bab0c984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def teleop.mode_callback</definition>
+        <argsstring>(data)</argsstring>
+        <name>mode_callback</name>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Callback function to set the local variable of the current mode if it has been changed by a node
+
+Args:
+    data(int): integer representing the current modality
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="389" column="1" bodyfile="scripts/teleop.py" bodystart="389" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceteleop_1ab28178aad9c049d2b7daa2f33ee80244" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def teleop.main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Main function: creates the *PublishThread* object and manages the modality that needs to be runned accordingly to the choice of the user.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="scripts/teleop.py" line="402" column="1" bodyfile="scripts/teleop.py" bodystart="402" bodyend="465"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>.. module::teleop
+:platform: Unix
+:synopsis: Python module for the autonomous driving
+.. moduleauthor:: Alessandro Perri s4476726@studenti.unige.it
+
+Subscribes to:
+/mode to retrieve the current modality
+/scan to obtain infos such as the distances from the obstacles detected by the lasers
+
+Publishes to:
+/mode to change the modality if the user wants to quit
+
+This node implements the second and third modality i.e. respectively the not assisted and the assisted manual navigation
+</verbatim> </para>
+    </detaileddescription>
+    <location file="scripts/teleop.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

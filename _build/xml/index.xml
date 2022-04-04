@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
+  <compound refid="classgoal__reaching_1_1colors" kind="class"><name>goal_reaching::colors</name>
+    <member refid="classgoal__reaching_1_1colors_1aaeb585e033fbf8d9e41ab92af493b9d5" kind="variable"><name>PINK</name></member>
+    <member refid="classgoal__reaching_1_1colors_1ae271bd6483eaab1d971f0bff3a85dc54" kind="variable"><name>BLUE</name></member>
+    <member refid="classgoal__reaching_1_1colors_1ae612e9ce6a79a35b2db45e6f6d618ddf" kind="variable"><name>CYAN</name></member>
+    <member refid="classgoal__reaching_1_1colors_1a41376f994c8e0429b330f4f1a7363754" kind="variable"><name>GREEN</name></member>
+    <member refid="classgoal__reaching_1_1colors_1a26e4867871be4e80f334ea209c23b534" kind="variable"><name>YELLOW</name></member>
+    <member refid="classgoal__reaching_1_1colors_1a611d83e8af36305f2218f3106646c0d4" kind="variable"><name>RED</name></member>
+    <member refid="classgoal__reaching_1_1colors_1a82e9fa88df9f8364c912636b503d630d" kind="variable"><name>ORANGE</name></member>
+    <member refid="classgoal__reaching_1_1colors_1a8a524bf4ec875e2f1eb5b65b34a1cdb4" kind="variable"><name>PURPLE</name></member>
+    <member refid="classgoal__reaching_1_1colors_1a1640110697a9bbc29d03e851138bc8ec" kind="variable"><name>ENDC</name></member>
+    <member refid="classgoal__reaching_1_1colors_1a195fcacbfa9ef242a9c6f704bc7a5d4b" kind="variable"><name>BOLD</name></member>
+    <member refid="classgoal__reaching_1_1colors_1ac42537cd5cbd6541ef69f956d482b864" kind="variable"><name>UNDERLINE</name></member>
+  </compound>
+  <compound refid="classteleop_1_1colors" kind="class"><name>teleop::colors</name>
+    <member refid="classteleop_1_1colors_1a42744bd64c810ff0151f0409e731167f" kind="variable"><name>PINK</name></member>
+    <member refid="classteleop_1_1colors_1a06caa2619065bdb9b50ff8ecd0509fd6" kind="variable"><name>BLUE</name></member>
+    <member refid="classteleop_1_1colors_1a610de342a0ea8eb0f98587c0ccbfe207" kind="variable"><name>CYAN</name></member>
+    <member refid="classteleop_1_1colors_1a452ed4925fbc9b906a5f1a57af1014d3" kind="variable"><name>GREEN</name></member>
+    <member refid="classteleop_1_1colors_1ab6d57d05df79bfce1dd88676e971327a" kind="variable"><name>YELLOW</name></member>
+    <member refid="classteleop_1_1colors_1ac3ef0970eb02933e6d76220333a2f610" kind="variable"><name>RED</name></member>
+    <member refid="classteleop_1_1colors_1a712f7fdefb77c21b9a71b211fcd2cbc8" kind="variable"><name>ORANGE</name></member>
+    <member refid="classteleop_1_1colors_1a6a797d4ceb17c7af9c633804f16727e0" kind="variable"><name>PURPLE</name></member>
+    <member refid="classteleop_1_1colors_1a7909fb498a476e4b432df782b668df4e" kind="variable"><name>ENDC</name></member>
+    <member refid="classteleop_1_1colors_1a8f68acb780cec4cea6357f4096337c3d" kind="variable"><name>BOLD</name></member>
+    <member refid="classteleop_1_1colors_1a7612a4934665b895c830032d0edd0a60" kind="variable"><name>UNDERLINE</name></member>
+  </compound>
+  <compound refid="classuser__interface_1_1colors" kind="class"><name>user_interface::colors</name>
+    <member refid="classuser__interface_1_1colors_1adff21e62dc615c872589d4d990054280" kind="variable"><name>PINK</name></member>
+    <member refid="classuser__interface_1_1colors_1af1b7b5c96a2613d0393b0c1b9c2a320a" kind="variable"><name>BLUE</name></member>
+    <member refid="classuser__interface_1_1colors_1ad2498ff8fb5602c765d4b64f73181475" kind="variable"><name>CYAN</name></member>
+    <member refid="classuser__interface_1_1colors_1a2e1d637d0f35c8604632c874a2ef24b0" kind="variable"><name>GREEN</name></member>
+    <member refid="classuser__interface_1_1colors_1ab8de7b45c8340ae12a8c2c5eb36908d8" kind="variable"><name>YELLOW</name></member>
+    <member refid="classuser__interface_1_1colors_1a77b6bdcd8e57f48f7fd63f2b576c51dd" kind="variable"><name>RED</name></member>
+    <member refid="classuser__interface_1_1colors_1a3d520d3b6b48b8e1479113c48a0b1778" kind="variable"><name>ORANGE</name></member>
+    <member refid="classuser__interface_1_1colors_1aa701688834ce22cad81b135c69ed8e4d" kind="variable"><name>PURPLE</name></member>
+    <member refid="classuser__interface_1_1colors_1a5ed36a25e728db6538db2ba7dd3f4841" kind="variable"><name>ENDC</name></member>
+    <member refid="classuser__interface_1_1colors_1a51184513ddb1428cb146fb5f12160a39" kind="variable"><name>BOLD</name></member>
+    <member refid="classuser__interface_1_1colors_1ad97e5f2ff2c55b0bccb13e26d3c402f6" kind="variable"><name>UNDERLINE</name></member>
+  </compound>
+  <compound refid="classteleop_1_1_publish_thread" kind="class"><name>teleop::PublishThread</name>
+    <member refid="classteleop_1_1_publish_thread_1a900f38ffd9cbbcc214160c1ffbb6e3c9" kind="variable"><name>publisher</name></member>
+    <member refid="classteleop_1_1_publish_thread_1a59bcc52a9307da57ee704854ffdbfe62" kind="variable"><name>x</name></member>
+    <member refid="classteleop_1_1_publish_thread_1a628bab1e32dc24be4ca52ac645151f5b" kind="variable"><name>y</name></member>
+    <member refid="classteleop_1_1_publish_thread_1a2dba4c1061bce640bb5fcc8728365eb3" kind="variable"><name>z</name></member>
+    <member refid="classteleop_1_1_publish_thread_1af71797852f9796a53f4a484c74441ca5" kind="variable"><name>th</name></member>
+    <member refid="classteleop_1_1_publish_thread_1a96c4137c2c5503c585010d6f833036ec" kind="variable"><name>speed</name></member>
+    <member refid="classteleop_1_1_publish_thread_1ad8a87759bb048c56c3ae920d0fb17d22" kind="variable"><name>turn</name></member>
+    <member refid="classteleop_1_1_publish_thread_1a3382b45e41363fdc0de16a485e89ac0b" kind="variable"><name>condition</name></member>
+    <member refid="classteleop_1_1_publish_thread_1acc208c2a68abb7220acfb74204bc61e8" kind="variable"><name>done</name></member>
+    <member refid="classteleop_1_1_publish_thread_1a659ff8c27941650f7b7600652baddff8" kind="variable"><name>timeout</name></member>
+    <member refid="classteleop_1_1_publish_thread_1a3ba0392ab1a98c5b38ec957fe2573b7a" kind="function"><name>__init__</name></member>
+    <member refid="classteleop_1_1_publish_thread_1ac14aad26b2ac829b06259369d98cc6bc" kind="function"><name>wait_for_subscribers</name></member>
+    <member refid="classteleop_1_1_publish_thread_1ac8e1576ccb031a2ff4b81b8251103f19" kind="function"><name>update</name></member>
+    <member refid="classteleop_1_1_publish_thread_1a4bcbb40065eaec7d3a81e270a7bc4e93" kind="function"><name>stop</name></member>
+    <member refid="classteleop_1_1_publish_thread_1a55180d7880c574b6b95ef74e85b484c3" kind="function"><name>my_stop</name></member>
+    <member refid="classteleop_1_1_publish_thread_1a98e337d07f7ffe394be95f7a86e72893" kind="function"><name>run</name></member>
+  </compound>
+  <compound refid="namespaceconf" kind="namespace"><name>conf</name>
+    <member refid="conf_8py_1a332f430461432dc465213f884a1e4967" kind="variable"><name>shell</name></member>
+    <member refid="conf_8py_1a45653c983098153b78e33600e39230eb" kind="variable"><name>project</name></member>
+    <member refid="conf_8py_1a33fa97cf51dcb25970fbf53f10159589" kind="variable"><name>copyright</name></member>
+    <member refid="conf_8py_1a637c239d256432248aa8d9f3ab0b8c52" kind="variable"><name>author</name></member>
+    <member refid="conf_8py_1a325dc746d8bf05c54d26351c35a21d90" kind="variable"><name>release</name></member>
+    <member refid="conf_8py_1ae475e080536acb271a0a0efe56c3ba42" kind="variable"><name>extensions</name></member>
+    <member refid="conf_8py_1ae850ae634911b713e036b43894fdd525" kind="variable"><name>templates_path</name></member>
+    <member refid="conf_8py_1a7ad48fb6f3e9b129c02346ea0d3527c1" kind="variable"><name>exclude_patterns</name></member>
+    <member refid="conf_8py_1a48cdbd350be55d619af304194f372f62" kind="variable"><name>autodoc_member_order</name></member>
+    <member refid="conf_8py_1a3117edf4443d9b8c70a9f0f44294ba79" kind="variable"><name>highlight_language</name></member>
+    <member refid="conf_8py_1a10af2a769eb3bd3322e874f677e435b1" kind="variable"><name>source_suffix</name></member>
+    <member refid="conf_8py_1a6fcd7e5236f355b1e1a55f9d95988810" kind="variable"><name>master_doc</name></member>
+    <member refid="conf_8py_1a6c3bfcc1a44546c1c75ce20f55bd0fd6" kind="variable"><name>html_theme</name></member>
+    <member refid="conf_8py_1af4fb5d8851ccaade135c2668dd3ced41" kind="variable"><name>html_static_path</name></member>
+    <member refid="conf_8py_1a8375f4f963de3ac8026eaa9beced9564" kind="variable"><name>intersphinx_mapping</name></member>
+    <member refid="conf_8py_1a8fe7f0d85f975f4ecba5cb6066959a09" kind="variable"><name>todo_include_todos</name></member>
+  </compound>
+  <compound refid="namespacegoal__reaching" kind="namespace"><name>goal_reaching</name>
+    <member refid="namespacegoal__reaching_1a59c70459270a4ebf4a1b03905a4145ad" kind="variable"><name>msg1</name></member>
+    <member refid="namespacegoal__reaching_1a12776eabefcb593ded2f229927b3e101" kind="variable"><name>msg2</name></member>
+    <member refid="namespacegoal__reaching_1a4aabdf549424d7138e37e3a5c56f8a3f" kind="variable"><name>currentmode</name></member>
+    <member refid="namespacegoal__reaching_1ae8f821e815a4f8f62830bc804e33ee68" kind="variable"><name>done_cb</name></member>
+    <member refid="namespacegoal__reaching_1ae5adab937da263541d48b2bc54aaa530" kind="variable"><name>goal_set</name></member>
+    <member refid="namespacegoal__reaching_1a7010074e498a0e4b9593aec46657f07a" kind="variable"><name>isTimeout</name></member>
+    <member refid="namespacegoal__reaching_1a96f3a53b482d5701d9cb7e0887bf8514" kind="function"><name>callback_active</name></member>
+    <member refid="namespacegoal__reaching_1a824ef1cc45a5ba12b5d6e7739e6e9426" kind="function"><name>callback_done</name></member>
+    <member refid="namespacegoal__reaching_1a044ce5c89acd2c02ed53cb0ac6bfd509" kind="function"><name>callback_feedback</name></member>
+    <member refid="namespacegoal__reaching_1af434fcef95ec580f038c3fc78af9f213" kind="function"><name>set_action</name></member>
+    <member refid="namespacegoal__reaching_1acea0b83b9e09022e1737baa93ad3aa70" kind="function"><name>set_goal</name></member>
+    <member refid="namespacegoal__reaching_1aa964f52c3a4f8b8d9513a59414170150" kind="function"><name>my_clbk_timeout</name></member>
+    <member refid="namespacegoal__reaching_1a4bc3fa1bb43eff3aa194fb08034a05e5" kind="function"><name>mode_callback</name></member>
+    <member refid="namespacegoal__reaching_1a82d2863986ccfc81148b28484a9c2b49" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="namespacestd__srvs_1_1srv" kind="namespace"><name>std_srvs::srv</name>
+  </compound>
+  <compound refid="namespaceteleop" kind="namespace"><name>teleop</name>
+    <member refid="namespaceteleop_1a4fd0b9a89bd7323ded365d7ee943fad9" kind="variable"><name>msg1</name></member>
+    <member refid="namespaceteleop_1a0c572c1d2dc76065135450001615e8ca" kind="variable"><name>moveBindings_mode2</name></member>
+    <member refid="namespaceteleop_1a5a7d93e4eb94a831fb34e3812e1767e9" kind="variable"><name>speedBindings</name></member>
+    <member refid="namespaceteleop_1a1728c1bc5a4043f6c7df2c0ad2747a3e" kind="variable"><name>msg2</name></member>
+    <member refid="namespaceteleop_1a30f041931df3deb9fea047413dbe0c1b" kind="variable"><name>can_go_left</name></member>
+    <member refid="namespaceteleop_1a534d6b3c6630fd116ae5ebc2a702bdd7" kind="variable"><name>can_go_right</name></member>
+    <member refid="namespaceteleop_1ac7f1f599fde5a35e81bb87af3980baa3" kind="variable"><name>can_go_straight</name></member>
+    <member refid="namespaceteleop_1a53f75f6e72eba8a708a2223c42cd5218" kind="variable"><name>firstTime</name></member>
+    <member refid="namespaceteleop_1a6cf6a928440e64c37c93b228be8cc177" kind="variable"><name>currentmode</name></member>
+    <member refid="namespaceteleop_1a4e175c2e448305ac1f74f4b1d12418fe" kind="variable"><name>quit</name></member>
+    <member refid="namespaceteleop_1a324730ec6ab1b9fb30cca7cf4e009b45" kind="variable"><name>moveBindings_mode3</name></member>
+    <member refid="namespaceteleop_1a65f55c21f1730466be45aa4287e6b79b" kind="function"><name>getKey</name></member>
+    <member refid="namespaceteleop_1a0dd3d74894153fd003fe44250c7e13c8" kind="function"><name>vels</name></member>
+    <member refid="namespaceteleop_1adeeb91caf01c29b8dd1b129d639ee33d" kind="function"><name>clbk_laser</name></member>
+    <member refid="namespaceteleop_1a11e578954ded0164ad3e1422963641ed" kind="function"><name>routine</name></member>
+    <member refid="namespaceteleop_1a6fb8d5b4f992eb9862ff4db7bab0c984" kind="function"><name>mode_callback</name></member>
+    <member refid="namespaceteleop_1ab28178aad9c049d2b7daa2f33ee80244" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="namespaceuser__interface" kind="namespace"><name>user_interface</name>
+    <member refid="namespaceuser__interface_1a2f76621b90797b5b6bba1cd22bc8c870" kind="variable"><name>isTimeout</name></member>
+    <member refid="namespaceuser__interface_1ae3d4a6a05731a62b3b77cd655a274e4e" kind="function"><name>timeout_callback</name></member>
+    <member refid="namespaceuser__interface_1ac26bdb296b6776907b72c17ce5a1b24a" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="index_8rst_8txt" kind="file"><name>index.rst.txt</name>
+    <member refid="index_8rst_8txt_1ae9742ce898b818e17259f358245c04b2" kind="variable"><name>file</name></member>
+    <member refid="index_8rst_8txt_1a4289d6530b1ac35c0b8655e51f23826a" kind="variable"><name>Apr</name></member>
+  </compound>
+  <compound refid="_c_make_lists_8txt" kind="file"><name>CMakeLists.txt</name>
+  </compound>
+  <compound refid="conf_8py" kind="file"><name>conf.py</name>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="goal__reaching_8py" kind="file"><name>goal_reaching.py</name>
+  </compound>
+  <compound refid="teleop_8py" kind="file"><name>teleop.py</name>
+  </compound>
+  <compound refid="user__interface_8py" kind="file"><name>user_interface.py</name>
+  </compound>
+  <compound refid="md__r_e_a_d_m_e" kind="page"><name>md_README</name>
+  </compound>
+  <compound refid="dir_45b9293d3daaa82c00b5908f14ebb805" kind="dir"><name>_build</name>
+  </compound>
+  <compound refid="dir_02bdb4005edb5055ba0ef39c3e2b4a3d" kind="dir"><name>_build/html/_sources</name>
+  </compound>
+  <compound refid="dir_63358181ce567149a79d24bdd45b3e93" kind="dir"><name>_build/html</name>
+  </compound>
+  <compound refid="dir_53e6fa9553ac22a5646d2a2b2d7b97a1" kind="dir"><name>scripts</name>
+  </compound>
+</doxygenindex>

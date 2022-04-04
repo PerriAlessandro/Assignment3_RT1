@@ -1,5 +1,20 @@
 #!/usr/bin/env python3
 
+"""
+.. module::teleop
+    :platform: Unix
+    :synopsis: Python module for the autonomous driving
+.. moduleauthor:: Alessandro Perri s4476726@studenti.unige.it
+
+Subscribes to:
+    /mode to retrieve the current modality
+    /scan to obtain infos such as the distances from the obstacles detected by the lasers
+
+Publishes to:
+    /mode to change the modality if the user wants to quit
+
+This node implements the second and third modality i.e. respectively the not assisted and the assisted manual navigation
+"""
 from __future__ import print_function
 import threading
 import roslib; roslib.load_manifest('teleop_twist_keyboard')
@@ -109,8 +124,11 @@ moveBindings_mode3 = {
     }
     
     
-#class for the characters colors
+
 class colors:
+    """
+    Class used for printing colors on the terminal
+    """
     PINK = '\033[95m'
     BLUE = '\033[94m'
     CYAN = '\033[96m'
@@ -229,12 +247,28 @@ def getKey(key_timeout):
 
 
 def vels(speed, turn):
+    """
+    Function that prints out the current linear and angular speed
+
+    Args:
+        speed(double): current speed
+        turn(double): current angular speed
+    Returns:
+        (str):string whinch contains the linear and angular speed
+
+    """
     return "currently:\tspeed %s\tturn %s " % (speed,turn)
 
 
 
-def clbk_laser(msg): #callback function of subscription to /scan topic
+def clbk_laser(msg): 
+    """
+    Callback function which is called to retrieve infos about the distances of the obstacles
 
+    Args:
+        msg(sensor_msgs/LaserScan.msg): contains ranges[] array which provides the distances each laser and the objects in the environment
+
+    """
 
     global can_go_left
     global can_go_right
@@ -264,10 +298,23 @@ def clbk_laser(msg): #callback function of subscription to /scan topic
 
 
 def routine(dictionary,msg,assisted):
-            global key,x,y,z,th,status,speed,turn,pub_thread,firstTime,quit
-            #function for modality 3. It manages the allowed commands the user can impose. The allowed commands depends on the free directions in the proximity of the robot
-            def disable_commands(dictionary):
+            """
+            Function that binds the pressed key to the actual motion of the robot.
 
+            Args:
+                dictionary(dict): a dictionary that contains all the selectable keys
+                msg(str): string containing the instructions for the selected modality
+            
+            """
+            global key,x,y,z,th,status,speed,turn,pub_thread,firstTime,quit
+            def disable_commands(dictionary):
+                """
+                Function for assisted driving. It manages the allowed commands the user can impose. The allowed commands depends on the free directions in the proximity of the robot
+
+                Args:
+                    dictionary(dict): the dictionary that has to be filtered by popping the keys that are binded to the unallowed directions
+                
+                """
                 global can_go_left
                 global can_go_right
                 global can_go_straight
@@ -340,11 +387,22 @@ def routine(dictionary,msg,assisted):
                     quit=True
 
 def mode_callback(data):
+    """
+    Callback function to set the local variable of the current mode if it has been changed by a node
+
+    Args:
+        data(int): integer representing the current modality
+    """
     global currentmode
     currentmode=data.data
 
 
-if __name__=="__main__":
+
+
+def main():
+    """
+    Main function: creates the *PublishThread* object and manages the modality that needs to be runned accordingly to the choice of the user.
+    """
     rospy.init_node('teleop')
     settings = termios.tcgetattr(sys.stdin)
     speed = rospy.get_param("~speed", 0.5)
@@ -404,3 +462,6 @@ if __name__=="__main__":
             mode_type = 0
 
 
+
+if __name__=="__main__":
+    main()
