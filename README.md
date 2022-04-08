@@ -97,6 +97,7 @@ while true
 ```
 __Possible Improvements__
 ----------------------
+An improvement could be the possibility to enable the manual driving modality also while the robot is autonomously reaching a target. In this way, it is possible to avoid all those cases in which the robot seems not taking the best path to the desired goal and manually adjust the direction to which it is oriented.
 
 
 
