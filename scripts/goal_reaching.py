@@ -15,8 +15,9 @@ Publishes to:
 
 This node implements the first modality i.e. the autonomous navigation towards a certain position.
 This script, as the name may suggest, implements the 'Autonomous Driving modality'. The user will be asked to insert the 'x' and 'y' coordinates to which the robot will navigate. 
-The whole task is accomplished by a __ROS action__. A 60 seconds timeout is set, so if the request cannot be accomplished the goal will be cancelled. 
+The whole task is accomplished by a *ROS action*. A 60 seconds timeout is set, so if the request cannot be accomplished the goal will be cancelled. 
 The user can also cancel the goal before the time is over, it is sufficient to return to the 'idle' status by pressing '0' on the UI console.
+
 """
 
 

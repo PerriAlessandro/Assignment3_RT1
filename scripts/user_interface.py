@@ -12,8 +12,8 @@ Subscribes to:
 Publishes to:
 	/mode to start a new modality
 
-This node implements a simple user interface to let the user decide the modality that has to be runned.
-
+The User Interface is the node that lets the user switch between the modalities, including the 'idle' one (i.e. when no mode is active). 
+The command is given by a user keyboard input and it is sent to the other nodes using ROS topics.
 
 """
 

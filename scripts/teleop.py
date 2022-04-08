@@ -13,7 +13,12 @@ Subscribes to:
 Publishes to:
     /mode to change the modality if the user wants to quit
 
-This node implements the second and third modality i.e. respectively the not assisted and the assisted manual navigation
+The third script implements both the *Assisted* and *Not Assisted Driving*.
+The script is essentially a revisitation of *teleop_twist_keyboard* because this one already lets the robot move using keyboard inputs, so the main part on which I worked was related to the Assisted Driving modality.
+In a nutshell, this last mode makes a subscription to /scan topic in order to check if a certain direction is free or if there is an obstacle (e.g. a wall). 
+Note that the robot can 'see' through its lasers only within a  +-90 relative degrees range, so it won't be able to avoid an obstacle if it is moving backward.
+The user can *quit* both the modalities by pressing `p` from the *teleop console*, or alternatively by pressing another command from *UI console*.
+
 """
 from __future__ import print_function
 import threading

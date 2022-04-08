@@ -68,7 +68,7 @@
 <span class="sd">.. module::goal_reaching</span>
 <span class="sd">	:platform: Unix</span>
 <span class="sd">  	:synopsis: Python module for the autonomous driving</span>
-<span class="sd">.. moduleauthor:: Alessandro Perri s4476726@studenti.unige.it</span>
+<span class="sd">.. moduleauthor:: Alessandro Perri &lt;s4476726@studenti.unige.it&gt;</span>
 
 <span class="sd">Subscribes to:</span>
 <span class="sd">	/mode to retrieve the current modality</span>
@@ -77,7 +77,11 @@
 <span class="sd">	/timeout </span>
 <span class="sd">	/mode to change the modality if the user wants to quit</span>
 
-<span class="sd">This node implements the first modality i.e. the autonomous navigation towards a certain position</span>
+<span class="sd">This node implements the first modality i.e. the autonomous navigation towards a certain position.</span>
+<span class="sd">This script, as the name may suggest, implements the &#39;Autonomous Driving modality&#39;. The user will be asked to insert the &#39;x&#39; and &#39;y&#39; coordinates to which the robot will navigate. </span>
+<span class="sd">The whole task is accomplished by a *ROS action*. A 60 seconds timeout is set, so if the request cannot be accomplished the goal will be cancelled. </span>
+<span class="sd">The user can also cancel the goal before the time is over, it is sufficient to return to the &#39;idle&#39; status by pressing &#39;0&#39; on the UI console.</span>
+
 <span class="sd">&quot;&quot;&quot;</span>
 
 
