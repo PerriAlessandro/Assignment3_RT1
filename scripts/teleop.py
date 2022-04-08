@@ -4,7 +4,7 @@
 .. module::teleop
     :platform: Unix
     :synopsis: Python module for the autonomous driving
-.. moduleauthor:: Alessandro Perri s4476726@studenti.unige.it
+.. moduleauthor:: Alessandro Perri <s4476726@studenti.unige.it>
 
 Subscribes to:
     /mode to retrieve the current modality
@@ -15,9 +15,9 @@ Publishes to:
 
 The third script implements both the *Assisted* and *Not Assisted Driving*.
 The script is essentially a revisitation of *teleop_twist_keyboard* because this one already lets the robot move using keyboard inputs, so the main part on which I worked was related to the Assisted Driving modality.
-In a nutshell, this last mode makes a subscription to /scan topic in order to check if a certain direction is free or if there is an obstacle (e.g. a wall). 
+In a nutshell, this last mode makes a subscription to _/scan_ topic in order to check if a certain direction is free or if there is an obstacle (e.g. a wall). 
 Note that the robot can 'see' through its lasers only within a  +-90 relative degrees range, so it won't be able to avoid an obstacle if it is moving backward.
-The user can *quit* both the modalities by pressing `p` from the *teleop console*, or alternatively by pressing another command from *UI console*.
+The user can __quit__ both the modalities by pressing `p` from the __teleop console__, or alternatively by pressing another command from __UI console__.
 
 """
 from __future__ import print_function
@@ -408,6 +408,7 @@ def main():
     """
     Main function: creates the *PublishThread* object and manages the modality that needs to be runned accordingly to the choice of the user.
     """
+    global key,x,y,z,th,status,speed,turn,pub_thread,firstTime,quit,key_timeout,settings
     rospy.init_node('teleop')
     settings = termios.tcgetattr(sys.stdin)
     speed = rospy.get_param("~speed", 0.5)
