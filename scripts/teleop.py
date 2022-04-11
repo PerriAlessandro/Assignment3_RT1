@@ -35,6 +35,7 @@ import time
 from std_srvs.srv import *
 from std_msgs.msg import Int32
 
+
 msg1 = """
 - - -  NOT ASSISTED  - - -
 - - - MANUAL DRIVING - - -
@@ -462,6 +463,8 @@ def main():
         else:
             if not firstTime and mode_type == 1 or mode_type==2:
                 pub_thread.my_stop()
+                os.system('cls||clear')
+                print(colors.BLUE +  colors.BOLD + "TELEOP TWIST! Select from the 'user_interface' console which mode you want to run:\n - [2] MANUAL DRIVE, \n - [3] ASSISTED DRIVE"+colors.ENDC)
             if(firstTime):
                 firstTime=False
                 print(colors.BLUE +  colors.BOLD + "TELEOP TWIST! Select from the 'user_interface' console which mode you want to run:\n - [2] MANUAL DRIVE, \n - [3] ASSISTED DRIVE"+colors.ENDC)

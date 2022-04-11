@@ -11,6 +11,7 @@ Subscribes to:
 
 Publishes to:
 	/mode to start a new modality
+	/goalpos to send the coordinates of the goal
 
 The User Interface is the node that lets the user switch between the modalities, including the 'idle' one (i.e. when no mode is active). 
 The command is given by a user keyboard input and it is sent to the other nodes using ROS topics.
@@ -20,6 +21,7 @@ The command is given by a user keyboard input and it is sent to the other nodes 
 import rospy
 import os
 from std_msgs.msg import Int32, Bool
+from geometry_msgs.msg import Vector3
 isTimeout=False #variable that'll be set to true if the timeout expires
 
 class colors:
@@ -54,13 +56,14 @@ def timeout_callback(data):
 
 def main():
 	"""
-	Main Function: constantly asks for the user to press a certain key to start or change a modality. If the user presses a proper key, 
+	Main Function: constantly asks for the user to press a certain key to start or change a modality. When the user presses a proper key (i.e '0','1','2','3','4'), the corresping value will be pushibled on /mode topic. In 'Goal Reaching' mode, a message with the goal position will be also published on /goalpos topic  
 
 	"""
 
 	global isTimeout
 	rospy.init_node('user_interface')
 	pubModality=rospy.Publisher('mode',Int32,queue_size=10) #publisher of 'mode' topic, sends user choice to other nodes
+	pubGoalPos=rospy.Publisher('goalpos',Vector3,queue_size=10) #publisher of the target position
 	subTimeout=rospy.Subscriber('timeout', Bool,timeout_callback) #subscriber of 'timeout' topic to receive timeout notification from goal_reaching node
 	print(colors.GREEN + colors.UNDERLINE + colors.BOLD + "\nIdle status. Waiting for a command from user..."+colors.ENDC)
 	while not rospy.is_shutdown():
@@ -84,6 +87,16 @@ def main():
 
 		elif command == 1: #first modality (Goal Reaching)
 
+			
+			print(colors.UNDERLINE + colors.BOLD +"Where do you want the robot to go?"+colors.ENDC)
+			goal_x_coord = float(input(colors.BOLD +"Insert the 'x' coordinate of the goal: "+colors.ENDC))
+			goal_y_coord = float(input(colors.BOLD +"Insert the 'y' coordinate of the goal: "+colors.ENDC))
+			msg=Vector3()
+			msg.x=goal_x_coord
+			msg.y=goal_y_coord
+			pubModality.publish(1)
+			pubGoalPos.publish(msg)
+			os.system('cls||clear') #clear the console
 			print(colors.BOLD + colors.UNDERLINE +colors.PINK+ "\nModality 1 - Goal Reaching"+ colors.ENDC)
 			print( colors.BOLD + "(press '0' during the execution to cancel the target)" + colors.ENDC)
 			currentmode=1

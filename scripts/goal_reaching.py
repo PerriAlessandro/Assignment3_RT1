@@ -29,7 +29,8 @@ import os
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 from tf import transformations
 from std_srvs.srv import *
-from std_msgs.msg import Int32, Bool
+from std_msgs.msg import Int32, Bool,Float32
+from geometry_msgs.msg import Vector3
 
 
 class colors:
@@ -57,7 +58,20 @@ currentmode=0
 done_cb=False #variable which states the accomplishment of the goal
 goal_set=False #variable which states if the goal has already been set
 isTimeout=False
+x_des= 0.0
+y_des= 0.0
+pos_received=False
 
+def goalpos_callback(v):
+	"""
+	Callback function which is called when the goal position has been set
+
+	"""
+	global  x_des, y_des, pos_received
+	x_des= v.x
+	y_des= v.y
+	pos_received=True
+	
 def callback_active(): 
 	"""
 	Callback function which is called when the action starts
@@ -184,11 +198,14 @@ def main():
 	global done_cb
 	global goal_set
 	global isTimeout
+	global x_des,y_des
+	global pos_received
 	
 	rospy.init_node('goal_reaching')
 	pubTimeout=rospy.Publisher('timeout',Bool,queue_size=10)
 	pubModality=rospy.Publisher('mode',Int32,queue_size=10)
 	subModality=rospy.Subscriber('mode', Int32,mode_callback)
+	subGoalPos=rospy.Subscriber('goalpos', Vector3 , goalpos_callback)
 	set_action()
 	print (colors.BLUE + colors.UNDERLINE + colors.BOLD +msg1+msg2+colors.ENDC)
 	
@@ -197,13 +214,16 @@ def main():
 		if currentmode==1: #if the current mode is '1' i.e. the mode for reaching a goal
 			
 			if  goal_set==False : #if the goal has not been set yet
-				os.system('cls||clear') #clear the console
-				print(colors.UNDERLINE + colors.BOLD +"Where do you want the robot to go?"+colors.ENDC)
-				goal_x_coord = float(input(colors.BOLD +"Insert the 'x' coordinate of the goal: "+colors.ENDC))
-				goal_y_coord = float(input(colors.BOLD +"Insert the 'y' coordinate of the goal: "+colors.ENDC))
-				set_goal(goal_x_coord,goal_y_coord)	#set the goal
-				goal_set = True
-				rospy.Timer(rospy.Duration(60),my_clbk_timeout,True)
+				
+				#print(colors.UNDERLINE + colors.BOLD +"Where do you want the robot to go?"+colors.ENDC)
+				#goal_x_coord = float(input(colors.BOLD +"Insert the 'x' coordinate of the goal: "+colors.ENDC))
+				#goal_y_coord = float(input(colors.BOLD +"Insert the 'y' coordinate of the goal: "+colors.ENDC))				
+				if pos_received:	
+					set_goal(x_des,y_des)	#set the goal
+					goal_set = True
+					rospy.Timer(rospy.Duration(60),my_clbk_timeout,True)
+					pos_received=False
+					os.system('cls||clear') #clear the console
 			if isTimeout:
 				#pubTimeout.publish(True)
 				pubModality.publish(0)
@@ -215,7 +235,7 @@ def main():
 			
 			if goal_set and done_cb==False: #if the goal has been set, the target hasn't been reached yet but the mode has been changed
 				client.cancel_goal()
-				
+				print (colors.BLUE + colors.UNDERLINE + colors.BOLD +msg1+msg2+colors.ENDC)
 			if done_cb: #if the mode has been changed and the task is done
 				done_cb=False
 			goal_set= False
