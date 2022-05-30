@@ -363,7 +363,9 @@ def routine(dictionary,msg,assisted):
                 else:
                     print(colors.GREEN +colors.BOLD+"All movements are allowed =)   "+colors.ENDC, end = "\r")
 
+
             key = getKey(key_timeout)
+
             if(assisted):
                 disable_commands(dictionary)
             if key in dictionary.keys():
