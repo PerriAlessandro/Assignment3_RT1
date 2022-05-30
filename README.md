@@ -7,6 +7,11 @@ The aim of this project consists in creating a package in which the user will be
 - __let the user drive with the keyboard__ ;
 - __let the user drive the robot assisting them to avoid collisions__.
 
+
+__Jupyter Notebook__
+----------------------
+You can find the Jupyter Notebook of this project inside /scripts folder.
+
 __How to run__
 ----------------------
 ### Installation
